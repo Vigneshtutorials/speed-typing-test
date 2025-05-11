@@ -18,7 +18,7 @@ let counterVal=setInterval(startCounter,1000);
 let url="https://api.quotable.io/random";
 
 async function randomQuote() {
-    const response = await fetch('https://api.quotable.io/random')
+    const response = await fetch('https://api.quotable.io/')
     const quote = await response.json()
     const quoteContent=quote.content;
     quoteDisplay.innerText=quoteContent;
